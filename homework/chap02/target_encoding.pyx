@@ -32,8 +32,8 @@ cpdef target_mean_v3(data, y_name, x_name):
 
 
 cdef void target_mean_v3_impl(double[:] result, int[:] y, int[:] x, const long nrow):
-    cdef dict value_dict = dict()
-    cdef dict count_dict = dict()
+    cdef dict value_dict = {}
+    cdef dict count_dict = {}
 
     cdef long i
     for i in range(nrow):
